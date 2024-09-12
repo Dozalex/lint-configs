@@ -1,0 +1,20 @@
+{
+  "name": "@dozalex/stylelint-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Alex Dozmorov",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dozalex/lint-configs.git",
+    "directory": "packages/stylelint-config"
+  },
+  "dependencies": {
+    "postcss-styled-syntax": "^0.6.4",
+    "stylelint": "^16.3.1",
+    "stylelint-order": "^6.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
