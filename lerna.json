@@ -1,0 +1,19 @@
+{
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "[ci skip] chore(release): publish",
+      "loglevel": "verbose",
+      "private": false,
+      "yes": true
+    },
+    "version": {
+      "ignoreChanges": ["**/*.md", "**/*.mdx"]
+    }
+  },
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
+}

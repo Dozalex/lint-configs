@@ -1,0 +1,38 @@
+{
+  "name": "@dozalex/lint-configs",
+  "license": "MIT",
+  "author": "Alex Dozmorov",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "nohoist": [],
+  "scripts": {
+    "prepare": "husky",
+    "release": "lerna publish",
+    "lint:eslint": "eslint . --fix",
+    "lint:prettier": "prettier . -w --log-level error --ignore-unknown",
+    "lint": "yarn lint:eslint && yarn lint:prettier"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@dozalex/lint": "*",
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "lerna": "^9.0.3",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4"
+  },
+  "lint-staged": {
+    "*.{js,mjs}": [
+      "eslint --fix --quiet"
+    ],
+    "*": [
+      "prettier -w --log-level error --ignore-unknown"
+    ]
+  },
+  "packageManager": "yarn@1.22.22"
+}
