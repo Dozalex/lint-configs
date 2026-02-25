@@ -26,16 +26,16 @@
     "typescript": "^5.7.0"
   },
   "dependencies": {
-    "@eslint/js": "^9.39.2",
-    "@typescript-eslint/eslint-plugin": "^8.52.0",
-    "@typescript-eslint/parser": "^8.52.0",
+    "@eslint/js": "^9.39.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-import-resolver-webpack": "^0.13.10",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^17.0.0",
+    "globals": "^17.3.0",
     "postcss-styled-syntax": "^0.7.1",
     "stylelint-order": "^7.0.1"
   },

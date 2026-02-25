@@ -20,11 +20,11 @@
   "dependencies": {},
   "devDependencies": {
     "@dozalex/lint": "*",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.3",
     "husky": "^9.1.7",
-    "lerna": "^9.0.3",
+    "lerna": "^9.0.4",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.7.4"
+    "prettier": "^3.8.1"
   },
   "lint-staged": {
     "*.{js,mjs}": [
