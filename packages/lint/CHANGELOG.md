@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.4 (2026-02-26)
+
+### Bug Fixes
+
+- languageOptions config. ([d12420d](https://github.com/Dozalex/lint-configs/commit/d12420d8b30f0e474876dd7c555192b70c4fbd1d))
+
 ## 0.0.3 (2026-02-25)
 
 ### Bug Fixes
