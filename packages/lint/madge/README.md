@@ -29,6 +29,9 @@ Your `.madgerc` file should look like this:
   "detectiveOptions": {
     "ts": {
       "skipTypeImports": true
+    },
+    "tsx": {
+      "skipTypeImports": true
     }
   },
   "fileExtensions": ["ts", "tsx"],

@@ -3,11 +3,16 @@ import tsParser from '@typescript-eslint/parser';
 
 export default [
   {
+    files: ['**/*.{ts,tsx}'],
     plugins: {
       '@typescript-eslint': tsEslintPlugin,
     },
     languageOptions: {
       parser: tsParser,
+      parserOptions: {
+        projectService: true,
+        ecmaFeatures: { jsx: true },
+      },
     },
     settings: {
       'import/resolver': {
