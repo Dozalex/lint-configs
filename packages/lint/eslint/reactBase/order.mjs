@@ -15,18 +15,12 @@ export default [
             // Order main external deps to do a code more clear.
             // With this order developer can focus only for specific deps.
             {
-              pattern: 'react/**',
-              patternOptions: {
-                partial: true,
-              },
+              pattern: 'react{,/**}',
               group: 'external',
               position: 'before',
             },
             {
-              pattern: 'react-redux/**',
-              patternOptions: {
-                partial: true,
-              },
+              pattern: 'react-redux{,/**}',
               group: 'external',
               position: 'before',
             },

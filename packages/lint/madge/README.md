@@ -44,13 +44,13 @@ Your `.madgerc` file should look like this:
 Add this command to `scripts` of root package.json:
 
 ```
-"lint:madge": "madge --circular .",
+"lint:madge": "madge --circular src packages/*/src",
 ```
 
 Add this command to `husky/pre-commit`:
 
 ```
-yarn madge --circular .
+yarn madge --circular src packages/*/src
 ```
 
 It's important to use it here to trigger it once for the whole project.

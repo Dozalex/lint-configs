@@ -24,7 +24,7 @@ Create a `stylelint.config.js` file in the root of your project directory (it sh
 
 ```js
 module.exports = {
-  extends: ['./node_modules/@dozalex/lint/stylelint'],
+  extends: ['@dozalex/lint/stylelint'],
 };
 ```
 
@@ -45,7 +45,7 @@ files: ['**/*styled.ts'];
 Add this commands to `scripts` of root package.json (use your own file mask):
 
 ```
-"lint:style": "stylelint './**/*.css' --fix",
+""lint:style": "stylelint \"{src,packages/*/src}/**/*.css\" --fix",",
 ```
 
 Add this command to `lint-staged` of root package.json:
