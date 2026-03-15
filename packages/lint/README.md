@@ -48,9 +48,9 @@ Example of `scripts` in your package.json:
     "prepare": "husky",
     "lint:ts": "tsc --noEmit",
     "lint:eslint": "eslint . --fix",
-    "lint:madge": "madge --circular .",
+    "lint:madge": "madge --circular src packages/*/src",
     "lint:prettier": "prettier . -w --log-level error --ignore-unknown",
-    "lint:style": "stylelint . --fix",
+    "lint:style": "stylelint \"{src,packages/*/src}/**/styled.ts\" --fix",
     "lint": "yarn lint:madge && yarn lint:style && yarn lint:eslint && yarn lint:ts && yarn lint:prettier"
   }
 }
@@ -59,10 +59,7 @@ Example of `scripts` in your package.json:
 Example of `husky/pre-commit`:
 
 ```
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-yarn madge --circular .
+yarn madge --circular src packages/*/src
 yarn lint-staged
 ```
 

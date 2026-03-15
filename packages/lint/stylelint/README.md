@@ -45,7 +45,7 @@ files: ['**/*styled.ts'];
 Add this commands to `scripts` of root package.json (use your own file mask):
 
 ```
-""lint:style": "stylelint \"{src,packages/*/src}/**/*.css\" --fix",",
+"lint:style": "stylelint \"{src,packages/*/src}/**/*.css\" --fix",
 ```
 
 Add this command to `lint-staged` of root package.json:
