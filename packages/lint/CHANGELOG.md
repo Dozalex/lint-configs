@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.5 (2026-03-15)
+
+### Bug Fixes
+
+- eslint config. ([329bc94](https://github.com/Dozalex/lint-configs/commit/329bc947f2b9b15aa8d1bfc963c33bc59d7ac576))
+
 ## 0.0.4 (2026-02-26)
 
 ### Bug Fixes
