@@ -32,7 +32,6 @@ Example of `lint-staged` in your package.json:
 ```json
 {
   "lint-staged": {
-    "*.{ts,tsx}": ["bash -c 'tsc --noEmit'"],
     "*.{css,ts,tsx}": ["stylelint --fix"],
     "*.{js,jsx,ts,tsx,mjs,cjs}": ["eslint --fix --quiet"],
     "*": ["prettier -w --log-level error --ignore-unknown"]
@@ -50,7 +49,7 @@ Example of `scripts` in your package.json:
     "lint:eslint": "eslint . --fix",
     "lint:madge": "madge --circular src packages/*/src",
     "lint:prettier": "prettier . -w --log-level error --ignore-unknown",
-    "lint:style": "stylelint \"{src,packages/*/src}/**/styled.ts\" --fix",
+    "lint:style": "stylelint \"{src,packages/*/src}/**/*.css\" --fix",
     "lint": "yarn lint:madge && yarn lint:style && yarn lint:eslint && yarn lint:ts && yarn lint:prettier"
   }
 }
@@ -61,6 +60,7 @@ Example of `husky/pre-commit`:
 ```
 yarn madge --circular src packages/*/src
 yarn lint-staged
+yarn lint:ts
 ```
 
 For more details and example configuration files, see the links above in the 'Includes' section.
