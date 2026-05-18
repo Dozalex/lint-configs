@@ -1,15 +1,29 @@
 module.exports = {
+  extends: ['stylelint-config-standard'],
   plugins: ['stylelint-order'],
   customSyntax: 'postcss-styled-syntax',
   files: ['**/*.css'],
   rules: {
+    'selector-class-pattern': null,
+    // Disable to avoid conflicts with order/order
+    'comment-empty-line-before': null,
+    // Disable to avoid conflicts with order/order
+    'declaration-empty-line-before': null,
     'order/order': ['custom-properties', 'declarations'],
     'order/properties-order': [
       {
         groupName: 'position',
         emptyLineBefore: 'always',
         noEmptyLineBetween: true,
-        properties: ['position', 'top', 'right', 'bottom', 'left', 'z-index'],
+        properties: [
+          'position',
+          'inset',
+          'top',
+          'right',
+          'bottom',
+          'left',
+          'z-index',
+        ],
       },
       {
         groupName: 'layout',
@@ -135,9 +149,9 @@ module.exports = {
           'text-overflow',
           'white-space',
           'word-break',
-          'word-wrap',
           'transition',
           'visibility',
+          'backface-visibility',
           'hyphens',
           'text-align',
           'text-transform',
@@ -156,6 +170,7 @@ module.exports = {
           '-webkit-font-smoothing',
           '-moz-osx-font-smoothing',
           '-webkit-appearance',
+          '-webkit-overflow-scrolling',
           'animation',
           'animation-name',
           'animation-duration',
