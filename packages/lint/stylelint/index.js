@@ -4,11 +4,12 @@ module.exports = {
   customSyntax: 'postcss-styled-syntax',
   files: ['**/*.css'],
   rules: {
-    'selector-class-pattern': null,
     // Disable to avoid conflicts with order/order
     'comment-empty-line-before': null,
     // Disable to avoid conflicts with order/order
     'declaration-empty-line-before': null,
+    'keyframes-name-pattern': null,
+    'selector-class-pattern': null,
     'order/order': ['custom-properties', 'declarations'],
     'order/properties-order': [
       {
