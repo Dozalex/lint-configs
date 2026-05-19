@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.9 (2026-05-19)
+
+### Bug Fixes
+
+- stylelint. ([b802db7](https://github.com/Dozalex/lint-configs/commit/b802db7b2a4d8f64f6649208f64d9ba0c34bc06b))
+
 ## 0.0.8 (2026-05-18)
 
 ### Bug Fixes
